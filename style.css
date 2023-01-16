@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: lato, sans-serif;
+}
+h2 {
+  font-size: 2rem;
+}
+#nav a,
+ul {
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+}
+#inside-menu a {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+#main {
+  background-image: url("images/Bg-zomato.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+#img,
+.two-img {
+  transform: scale(0.98);
+  cursor: pointer;
+}
+#img:hover {
+  transform: scale(0.98);
+}
+
+#inside-menu {
+  font-size: 1.2rem;
+}
+
+#two-img img:hover {
+  transform: scaleX(0.98);
+}
+
+#searchbar {
+  width: 500px;
+  height: 30px;
+  position: relative;
+}
+#searchbar input {
+  padding-left: 40px;
+}
+
+#searchbar i {
+  position: absolute;
+  top: 5px;
+  left: 1px;
+  padding: 3px 3px 3px 10px;
+}
+
+.gridy {
+  position: relative;
+  cursor: pointer;
+}
+
+.gridy h5 {
+  position: absolute;
+  top: 76%;
+  left: 7%;
+  color: white;
+}
+.gridy p {
+  position: absolute;
+  top: 84%;
+  left: 7%;
+  color: white;
+}
+
+.gridy img {
+  margin-bottom: 20px;
+  filter: brightness(70%);
+}
+.places .col:hover {
+  transform: scale(0.98);
+}
+.single {
+  box-shadow: 1px 1px 4px 1px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#cross {
+  position: relative;
+}
+#cross input {
+  top: 50px;
+  position: absolute;
+  border-radius: 20px;
+  border: 1px solid black;
+  height: 30px;
+  width: 200px;
+}
+#cross button {
+  position: absolute;
+  left: 200px;
+}
+.all-input {
+  margin-left: 80px;
+  padding-top: 70px;
+}
+
+#footer tr,
+th {
+  margin: 10px;
+  padding: 20px;
+  padding-right: 40px;
+}
+#footer tr,
+td {
+  margin-left: 40px;
+  padding-left: 25px;
+  padding-right: 20px;
+  font-family: lato;
+  margin-right: 100px;
+}
+footer .links {
+  margin-top: 100px;
+  margin-left: 300px;
+  padding: 0 20px 10px 20px 50px;
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+footer .links i {
+  padding: 5px;
+}
+@media screen and (max-width: 600px) {
+  #nav a {
+    display: none;
+  }
+
+  .all-input {
+    padding-left: 0;
+    margin-left: 0;
+    margin-top: 40px;
+    width: 350px;
+    height: 350px;
+  }
+  .cross {
+    display: block;
+  }
+  .cross button {
+    position: relative;
+  }
+}

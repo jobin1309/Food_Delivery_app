@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/215d344e18.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <script src="main.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container-fluid" id="main">
+      <div class="d-flex justify-content-between text-center text-light p-3">
+        <img
+          src="images/icons8-hamburger-menu-96.png"
+          alt=""
+          width="30px"
+          height="30px"
+          data-bs-toggle="modal"
+          data-bs-target="#myModal"
+          id="img"
+        />
+
+        <ul class="d-flex justify-content-between text-align-middle" id="nav">
+          <li class="nav-item px-2"><a href="#">Investor relations</a></li>
+          <li class="nav-item px-2"><a href="#">Add relation</a></li>
+          <li class="nav-item px-2"><a href="#">Log in</a></li>
+          <li class="nav-item px-2"><a href="#">Sign up</a></li>
+        </ul>
+      </div>
+      <!--Modal button-->
+      <!-- <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#myModal"
+      ></button> -->
+      <!--Modal-->
+      <div class="modal" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-bod p-5 text-dark" id="inside-menu">
+              <p>
+                <a class="text-dark" href="#">Investor relations</a>
+              </p>
+              <p><a class="text-dark" href="#">Add restaurant</a></p>
+              <p><a class="text-dark" href="#">Login</a></p>
+              <p><a class="text-dark" href="#">Sign up</a></p>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-danger"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-5 pt-5">
+        <img
+          class="mx-auto d-block mt-5"
+          src="images/8313a97515fcb0447d2d77c276532a511583262271.webp
+        "
+          alt=""
+          width="340px"
+          height="70px"
+        />
+        <h1 class="text-light text-center mt-4">
+          Discover the best food & drinks in Kochi
+        </h1>
+      </div>
+      <div class="d-flex justify-content-center align-middle">
+        <div class="form-group" id="searchbar">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="text"
+            class="form-control mt-n3"
+            id="input1"
+            value=""
+            placeholder="Search for foods, cuisine or dish"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!--cards with flex-->
+    <div class="container d-flex mt-5" id="two-img">
+      <div class="container text-center two-img">
+        <div class="card">
+          <img
+            class="img-fluid rounded mx-auto d-block"
+            src="images\order-online (2).webp"
+            alt=""
+          />
+          <h2>Order online</h2>
+          <p>Stay home and order to your doorstep.</p>
+        </div>
+      </div>
+      <div class="container text-center two-img">
+        <div class="card">
+          <img
+            class="img-fluid rounded mx-auto d-block"
+            src="images/dining.webp"
+            alt=""
+          />
+          <h2>Dining</h2>
+          <p>View the city's favourite dining venue.</p>
+        </div>
+      </div>
+    </div>
+
+    <!--Flex image-->
+    <div class="container mt-5">
+      <div class="container-fluid mt-4">
+        <h2>Collections</h2>
+        <p>
+          Explore curated lists of top restaurants, cafes, pubs, and bars in
+          Kochi, based on trends
+        </p>
+        <div class="row">
+          <div class="col-sm gridy">
+            <img class="img-fluid rounded" 3 src="images/img-1.webp" alt="" />
+            <h5>Veggie Friendly</h5>
+            <p>5 places</p>
+          </div>
+          <div class="col-sm gridy">
+            <img class="img-fluid rounded" src="images/img-2.webp" alt="" />
+            <h5>Must-Visit</h5>
+            <p>8 Places</p>
+          </div>
+          <div class="col-sm gridy">
+            <img class="img-fluid rounded" src="images/img-3.webp" alt="" />
+            <h5>Great Cafes</h5>
+            <p>11 cafes</p>
+          </div>
+
+          <div class="col-sm gridy">
+            <img class="img-fluid" src="images/img-4.webp" alt="" />
+            <h5>Super Seafood</h5>
+            <p>5 places</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container p-4 pb-2">
+        <h2>Popular localities and around <strong>Kochi</strong></h2>
+      </div>
+
+      <div class="container places">
+        <div class="row">
+          <div class="col m-4 single">
+            <h4 class="p-4 pb-0">Kakanad</h4>
+            <p class="p-4">363 places</p>
+          </div>
+          <div class="col m-4 single">
+            <h4 class="p-4 pb-0">Edapally</h4>
+            <p class="p-4">259 places</p>
+          </div>
+          <div class="col m-4 single">
+            <h4 class="p-4 pb-0">Fort Kochi</h4>
+            <p class="p-4">78 places</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col m-4 single">
+            <h4 class="p-4 pb-0">Panampilli Nagar</h4>
+            <p class="p-4">120 places</p>
+          </div>
+          <div class="col m-4 single">
+            <h4 class="p-4 pb-0">Vytilla</h4>
+            <p class="p-4">183 places</p>
+          </div>
+          <div class="col m-4 single">
+            <h4 class="p-4 pb-0">Kacheripady</h4>
+            <p class="p-4">130 places</p>
+          </div>
+        </div>
+        <!-- </div> -->
+        <!-- <div class="container row"> -->
+        <div class="row">
+          <div class="col m-4 single">
+            <h4 class="p-4 pb-0">MG Road</h4>
+            <p class="p-4">124 places</p>
+          </div>
+          <div class="col m-4 single">
+            <h4 class="p-4 pb-0">Palarivattom</h4>
+            <p class="p-4">89 places</p>
+          </div>
+          <div class="col m-4 single">
+            <h4 class="p-4 pb-0">See more</h4>
+            <p class="p-4">136 places</p>
+          </div>
+        </div>
+        <!-- </div> -->
+      </div>
+
+      <div class="d-flex all-input">
+        <div>
+          <img
+            class="img-fluid ms-4 img-email"
+            src="images/Mobile zomato.webp"
+            width="320px"
+            height="700px"
+            alt=""
+          />
+        </div>
+
+        <div class="container">
+          <div class="ms-5">
+        <h2>Get the Zomato app</h2>
+        <p>
+          We will send you a link, open it on your phone to download the app
+        </p>
+
+        <form action="" class="form-group">
+          <input
+            class="form-group"
+            type="radio"
+            onchange="hideB(this)"
+            name="aorb"
+            checked
+          />Email
+          <input
+            class="form-group"
+            type="radio"
+            onchange="hideA(this)"
+            name="aorb"
+          />Mobile
+       </form>
+          <div class="d-flex pt-5" id="cross">
+            <div>
+              <input
+                class="form-group"
+                type="email"
+                id="email"
+                placeholder="Email"
+              />
+              <input
+                class="form-group"
+                type="tel"
+                style="visibility: hidden"
+                id="mobile"
+                placeholder="Mobile"
+              />
+
+                  <button type="button" id="red" class="btn btn-danger">
+            Share
+          </button>
+            </div>
+         </div>
+         <div class="d-flex pt-5">
+          <img class="img-fluid pt-3 pe-3" src="images/GooglePlay.webp" alt="" width="150px" height="10px">
+          <img class="img-fluid pt-3"src="images/AppsStore.webp" alt=""  width="150px" height="10px">
+         </div>
+       </div>
+      </div>
+    </div>
+     
+
+    <div class="container mt-5 pt-5"><h2 class="mt-5 pt-5">Explore options near me</h2>
+
+  <div class="accordion mt-3" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Popular cuisines near me
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p>
+        Arabian food near me - Bakery food near me - Beverages food near me - Biryani food near me  - Burger food near me  - Chinese food near me  - Continental food near me  - Desserts food near me  - Ice Cream food near me  - Juices food near me  - Kerala food near me  - Lebanese food near me  - North Indian food near me  - Pizza food near me  - Sandwich food near me  - Seafood food near me  - Shake food near me  - Sichuan food near me  - South Indian food near me  - Street food near me 
+         </p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Popular restaurant types near me
+      </button>
+
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p>
+        Bakeries near me - Bars near me  - Beverage Shops near me  - Cafés near me  - Casual Dining near me  -Confectioneries near me  - Dessert Parlors near me  - Dhabas near me  -Fine Dining near me  - Food Courts near me  -Food Trucks near me  - Kiosks near me  - Lounges near me  -Paan Shop near me  - Quick Bites near me  - Sweet Shops near me  -
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Top Restaurant Chains
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+       <p>BurgerKing  -  KFC  -  McDonald's - PizzaHut -  WOW!Momo </p>
+      </div>
+    </div>
+  </div>
+    <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Cities We Deliver To
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Delhi  NCR  Kolkata  Mumbai  Bengaluru  Pune  Hyderabad  Chennai  Lucknow Kochi  Jaipur  Ahmedabad Chandigarh  Goa  Indore  Gangtok  Nashik  Ooty  Shimla  Ludhiana  Guwahati  Amritsar  Kanpur Allahabad  Aurangabad  Bhopal  Ranchi  Visakhapatnam  Bhubaneswar  Coimbatore  Mangalore  Vadodara Nagpur  Agra  Dehradun  Mysore  Puducherry  Surat  Varanasi  Patna  Udaipur  Khajuraho  Neemrana Cuttack  Trivandrum  Haridwar  Leh  Pushkar  Rajkot  Madurai Kozhikode  Alappuzha  Thrissur  Manipal  Vijayawada  Jodhpur Kota  Ajmer  Mussoorie  Rishikesh  Jalandhar  Jammu  Manali Dharamshala  Raipur  See more
+        
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+<footer class="container d-flex pt-2 py-4 mt-4">
+  <div class="container">
+    <img class="m-4 ms-3"src="images/Zomato_black.webp" alt="" width="100px" height="30px">
+  
+
+<table id="footer">
+
+  <tr>
+    <th>ABOUT ZOMATO</th>
+    <th>ZOMAVERSE</th>
+    <th>FOR RESTAURANT</th>
+    <th>LEARN MORE</th>
+   
+  </tr>
+  <tr>
+    <td>Who We are</td>
+    <td>Zomato</td>
+    <td>Partner With Us</td>
+    <td>Privacy</td>
+  </tr>
+   <tr>
+    <td>Blog</td>
+    <td>Blinkit</td>
+    <td>Apps For You</td>
+    <td>Security</td>
+  </tr>
+   <tr>
+    <td>Work With Us</td>
+    <td>Feeding India</td>
+    <td>Hyperpure</td>
+    <td>Zomaland</td>
+  </tr> <tr>
+    <td>Investor Relations</td>
+    <td>Report Fraud</td>
+    <td>Zomato For Work</td>
+    <td>Privacy</td>
+  </tr>
+</table>
+
+</div>
+
+<div class="container pt-4 ms-5 links">
+  <p>Social Links</p>
+<div class="d-flex ">
+  <i class="fa-brands fa-square-instagram"></i>
+  <i class="fa-brands fa-linkedin"></i>
+  <i class="fa-brands fa-twitter"></i>
+  <i class="fa-brands fa-youtube"></i>
+  </div>
+
+</div>
+</footer>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
